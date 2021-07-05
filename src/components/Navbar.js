@@ -21,7 +21,7 @@ function Navbar() {
           </li>
           <li>
             <button className="navbar__btn" onClick={userLogout}>
-              Logout{" "}
+              Logout
             </button>
           </li>
         </div>
@@ -32,7 +32,7 @@ function Navbar() {
           </li>
           <li>
             <button className="navbar__btn" onClick={userRegister}>
-              Register with Google{" "}
+              Register with Google
             </button>
           </li>
         </div>

@@ -11,9 +11,10 @@ const ContextFun = (props) => {
     const [allmsg, setAllmsg] = useState([]);
     const register = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider).then((result) => {
-            firebase.auth().signInWithRedirect(provider);
-        })
+        firebase.auth().signInWithPopup(provider)
+        // firebase.auth().signInWithPopup(provider).then((result) => {
+        //     firebase.auth().signInWithRedirect(provider);
+        // })
     }
     const sendMsg = (msg) => {
         db.collection("messages").add({
